@@ -14,6 +14,7 @@ namespace TestWpfApp01
         protected virtual void OnPropertyChanged(string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+           
         }
     }
 }

@@ -25,8 +25,9 @@
 
                 <TextBlock Text="Тестовое приложение" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
 
-                <ComboBox Name="TestList" materialDesign:HintAssist.Hint="Раскрывающийся список" Height="30" VerticalAlignment="Top">
-                   
+                <ComboBox ItemsSource="{Binding Path=TheList, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                          Name="TestList" materialDesign:HintAssist.Hint="Раскрывающийся список" Height="30" VerticalAlignment="Top" >
+                  
                 </ComboBox>
 
                 <TextBox x:Name="TextBoxFirst"  materialDesign:HintAssist.Hint="Первый текстбокс" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
@@ -38,7 +39,7 @@
 
 
 
-                    <Button Click="ClickStart" HorizontalAlignment="Right" Content="Start" Style="{StaticResource MaterialDesignFlatButton}" />
+                    <Button HorizontalAlignment="Right" Content="Start" Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding AddGuid}" />
 
 
 

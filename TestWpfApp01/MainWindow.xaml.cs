@@ -32,22 +32,19 @@ namespace TestWpfApp01
         public MainWindow()
         {
             InitializeComponent();
-            string empty = "Пусто";
-            TestList.Items.Add(empty);
+            
+            
             this.DataContext = new MainWindowViewModel();
+           
+            
 
-
-
+           
 
         }
+        
+         
 
-        private void ClickStart(object sender, RoutedEventArgs e)
-        {
-
-            Guid x = Guid.NewGuid();
-            TextBoxFirst.Text = x.ToString();
-            TestList.Items.Add(x);
-        }
+        
 
 
 
