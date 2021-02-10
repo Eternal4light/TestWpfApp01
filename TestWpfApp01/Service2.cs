@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestWpfApp01
 {
-    class Service2 : IGetOne
+    class Service2 : Interface01
     {
-        public string GetOne()
+        public string GetGuid()
         {
             string x = "1";
             return x;

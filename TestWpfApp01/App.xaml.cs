@@ -39,9 +39,10 @@ namespace TestWpfApp01
         private void ConfigureContainer()
         {
             _kernel = new StandardKernel();
-            _kernel.Bind<Interface01>().To<Service>();
-            // _kernel.Bind<IGetOne>().To<Service2>();
+            //  _kernel.Bind<Interface01>().To<Service>();
+            _kernel.Bind<Interface01>().To<Service2>();
         }
+        
 
 
     }
