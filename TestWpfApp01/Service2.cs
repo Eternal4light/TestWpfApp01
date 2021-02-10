@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace TestWpfApp01
 {
-    public class Service : Interface01
+    class Service2 : IGetOne
     {
-
-        public  string GetGuid()
+        public string GetOne()
         {
-            Guid x = Guid.NewGuid();
-            return x.ToString();
+            string x = "1";
+            return x;
         }
-
-       
     }
-        
 }

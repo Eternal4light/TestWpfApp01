@@ -29,20 +29,14 @@ namespace TestWpfApp01
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel vm)
         {
             InitializeComponent();
             
             
-            this.DataContext = new MainWindowViewModel();
-           
-            
-
-           
-
+            this.DataContext = vm;
+            //this.DataContext = new MainWindowViewModel(new Service());
         }
-        
-         
 
         
 

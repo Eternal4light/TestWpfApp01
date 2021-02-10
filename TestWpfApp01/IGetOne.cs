@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TestWpfApp01
 {
-    public interface Interface01
+    public interface IGetOne
     {
-        string GetGuid();
-
+        string GetOne();
     }
 }
